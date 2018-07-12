@@ -55,6 +55,7 @@ def play(my_songs)
   
   if is_valid == "no"
     puts "Invalid input, please try again"
+    user_choice = gets.chomp
   end
   
 end
