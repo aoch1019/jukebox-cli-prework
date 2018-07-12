@@ -46,9 +46,9 @@ def play(my_songs)
   user_choice = gets.chomp
   is_valid = "no"
   
-  my_songs.keys.each do |song|
+  my_songs.each do |song, path|
     if user_choice == song
-      
+      system "open #{path}"
       is_valid = "yes"
     end
   end
