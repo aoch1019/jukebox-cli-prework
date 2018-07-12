@@ -42,6 +42,20 @@ def play(my_songs)
   #if it is, play the song using the system 'open <file path>' syntax
   #get the file path of the song by looking it up in the my_songs hash
   
+  puts "Please enter a song name or number:"
+  user_choice = gets.chomp
+  is_valid = "no"
+  
+  my_songs.keys.each do |song|
+    if user_choice == song
+      puts "Playing #{song}"
+      is_valid = "yes"
+    end
+  end
+  
+  if is_valid == "no"
+    puts "Invalid input, please try again"
+  end
   
 end
 
