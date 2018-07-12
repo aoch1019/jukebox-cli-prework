@@ -48,7 +48,7 @@ def play(my_songs)
   
   my_songs.keys.each do |song|
     if user_choice == song
-      puts "Playing #{song}"
+      
       is_valid = "yes"
     end
   end
